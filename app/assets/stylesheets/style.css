@@ -55,6 +55,7 @@ a {
 }
 
 .header2 {
+  
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   top: 38%;
@@ -71,11 +72,16 @@ a {
   z-index: 5;
 }
 
+
+
 .inner {
   width: 1024px;
   margin: 0 auto;
+
+
 }
 .nav {
+  margin-top: 25px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -313,9 +319,24 @@ a {
 
 .footer {
   background-color: #99cc00;
-  padding: 10px 0;
+  padding: 7px 0;
 }
+
+.footer2 {
+  height: 35px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 10;
+  background: -moz-linear-gradient(bottom, #000000, transparent);
+  background: -webkit-linear-gradient(top, #000000, transparent);
+  background: linear-gradient(to top, #000000, transparent);
+}
+
 .copyright {
+  margin-top: 10px;
   text-align: center;
   color: #fff;
   font-size: 10px;
