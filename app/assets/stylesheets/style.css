@@ -72,14 +72,171 @@ a {
   z-index: 5;
 }
 
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
 
 
 .inner {
-  width: 1024px;
+  width: 80%;
   margin: 0 auto;
-
-
 }
+
+/* 電車の外観 */
+.train {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 600px; /* 高さはお好みで調整してください */
+  border: 5px solid black; /* 電車の外枠 */
+  position: relative;
+  margin: 20px 0;
+  background-color: #ffffff; /* 車両の背景色 */
+}
+
+/* ドアの共通スタイル */
+.train .door {
+  content: "";
+  width: 10px; /* ドアの幅 */
+  height: 50px; /* ドアの高さ */
+  background-color: #000; /* ドアの色 */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* シート */
+.train .sheet1 {
+  content: "";
+  border : solid 2px #333 ;
+  width: 50px; /* シートの幅 */
+  height: 60px; /* シートの高さ */
+  /*background-color: #4940ff; /* シートの色 */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.train .sheet2 {
+  content: "";
+  border : solid 2px #333 ;
+  width: 50px; /* シートの幅 */
+  height: 60px; /* シートの高さ */
+  /*background-color: #4940ff; /* シートの色 */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.train .sheet3 {
+  content: "";
+  border : solid 2px #333 ;
+  width: 50px; /* シートの幅 */
+  height: 60px; /* シートの高さ */
+  /*background-color: #4940ff; /* シートの色 */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.train .sheet4 {
+  content: "";
+  border : solid 2px #333 ;
+  width: 50px; /* シートの幅 */
+  height: 60px; /* シートの高さ */
+  /*background-color: #4940ff; /* シートの色 */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.train .sheet5 {
+  content: "";
+  border : solid 2px #333 ;
+  width: 50px; /* シートの幅 */
+  height: 60px; /* シートの高さ */
+  /*background-color: #4940ff; /* シートの色 */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.train .sheet6 {
+  content: "";
+  border : solid 2px #333 ;
+  width: 50px; /* シートの幅 */
+  height: 60px; /* シートの高さ */
+  /*background-color: #4940ff; /* シートの色 */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.train .sheet7 {
+  content: "";
+  border : solid 2px #333 ;
+  width: 50px; /* シートの幅 */
+  height: 60px; /* シートの高さ */
+  /*background-color: #4940ff; /* シートの色 */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.train .sheet8 {
+  content: "";
+  border : solid 2px #333 ;
+  width: 50px; /* シートの幅 */
+  height: 60px; /* シートの高さ */
+  /*background-color: #4940ff; /* シートの色 */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.train .sheet9 {
+  content: "";
+  border : solid 2px #333 ;
+  width: 50px; /* シートの幅 */
+  height: 60px; /* シートの高さ */
+  /*background-color: #4940ff; /* シートの色 */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.train .sheet10 {
+  content: "";
+  border : solid 2px #333 ;
+  width: 50px; /* シートの幅 */
+  height: 60px; /* シートの高さ */
+  /*background-color: #4940ff; /* シートの色 */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 電車の見出し（1両目など） */
+.train h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 電車の見出し（矢印） */
+.yajirushi {
+  font-size: 20vw;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .nav {
   margin-top: 25px;
   width: 100%;
@@ -211,6 +368,10 @@ a {
 }
 
 /* 詳細ページ */
+.train_show{
+  margin-top: 10vh;
+}
+
 .prototype__wrapper{
   min-height: calc(100vh - 161px);
 }
@@ -341,6 +502,12 @@ a {
   color: #fff;
   font-size: 10px;
 }
+
+/* 詳細ページ */
+ .sheets_show {
+  margin-top: 10vh;
+ }
+
 
 /* タブレット対応 */
 @media (max-width: 1024px) {
