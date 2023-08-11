@@ -3,9 +3,34 @@
 
     <div class="card__wrapper">
       <%# 投稿機能実装後、部分テンプレートでプロトタイプ投稿一覧を表示する %>
- 
+
+<div class="train">
+  <div class="yajirushi">⬆️</div> 
+  <h1>1号車</h1>
+  <div class="door" style="left: 0%; top: 15%;"></div>
+  <div class="door" style="left: 0%; top: 38%;"></div>
+  <div class="door" style="left: 0%; top: 62%;"></div>
+  <div class="door" style="left: 0%; top: 85%;"></div>
+  <div class="door" style="right: 0%; top: 15%;"></div>
+  <div class="door" style="right: 0%; top: 38%;"></div>
+  <div class="door" style="right: 0%; top: 62%;"></div>
+  <div class="door" style="right: 0%; top: 85%;"></div>
+  
+
+        <% (1..10).each do |seat_number| %>
+          <div class="sheet<%= seat_number %>" style="left: <%= left_value_for(seat_number) %>%; top: <%= top_value_for(seat_number) %>%;">
+            <%= link_to train_sheet_path(@train, seat_number), class: "sheet#{seat_number}" do %>
+              <!-- 席の内容 -->
+            <% end %>
+          </div>
+          
+        <% end %>
+  </div>
+</div>
 
 
     </div>
   </div>
+
+
 </main>
