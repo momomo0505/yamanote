@@ -19,18 +19,13 @@
 
         <% (1..10).each do |seat_number| %>
           <div class="sheet<%= seat_number %>" style="left: <%= left_value_for(seat_number) %>%; top: <%= top_value_for(seat_number) %>%;">
-            <%= link_to train_sheet_path(@train, seat_number), class: "sheet#{seat_number}" do %>
+            <%= link_to new_train_sheet_path(@train, seat_number: seat_number), class: "sheet#{seat_number}" do %>
               <!-- 席の内容 -->
             <% end %>
-          </div>
-          
+          </div>       
         <% end %>
-  </div>
-</div>
-
-
+       </div>
+     </div>
     </div>
   </div>
-
-
 </main>

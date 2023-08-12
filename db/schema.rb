@@ -10,13 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_08_10_133404) do
+ActiveRecord::Schema.define(version: 2023_08_12_095350) do
 
   create_table "sheets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.decimal "price", precision: 10, scale: 2
-    t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "exit_station"
+    t.text "appearance"
+    t.integer "train_id"
+    t.bigint "seller_id"
+    t.bigint "buyer_id"
+    t.index ["buyer_id"], name: "index_sheets_on_buyer_id"
+    t.index ["seller_id"], name: "index_sheets_on_seller_id"
   end
 
   create_table "trains", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -42,4 +47,6 @@ ActiveRecord::Schema.define(version: 2023_08_10_133404) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "sheets", "users", column: "buyer_id"
+  add_foreign_key "sheets", "users", column: "seller_id"
 end

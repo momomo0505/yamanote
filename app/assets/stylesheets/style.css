@@ -503,11 +503,25 @@ a {
   font-size: 10px;
 }
 
-/* 詳細ページ */
- .sheets_show {
-  margin-top: 10vh;
+/* 新規ページ */
+ .new_sheet{
+  margin-top: 11vh;
  }
 
+/* 詳細ページ */
+ .sheets_show {
+  margin-top: 11vh;
+ }
+
+ .sheet_font1{
+  text-align: center;
+  font-size: 20px;
+ }
+
+  .sheet_font2{
+
+  font-size: 15px;
+ }
 
 /* タブレット対応 */
 @media (max-width: 1024px) {
