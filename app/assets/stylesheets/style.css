@@ -104,6 +104,7 @@ a {
 }
 
 .info{
+  padding: 10vw;
   display: flex;
   justify-content: space-between;
   margin-top: 10vh;
