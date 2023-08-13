@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_08_12_095350) do
+ActiveRecord::Schema.define(version: 2023_08_13_055212) do
 
   create_table "sheets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2023_08_12_095350) do
     t.integer "train_id"
     t.bigint "seller_id"
     t.bigint "buyer_id"
+    t.integer "seat_number"
     t.index ["buyer_id"], name: "index_sheets_on_buyer_id"
     t.index ["seller_id"], name: "index_sheets_on_seller_id"
   end

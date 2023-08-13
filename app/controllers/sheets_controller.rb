@@ -75,8 +75,8 @@ class SheetsController < ApplicationController
    end
  
    private
- 
+   
    def sheet_params
-     params.require(:sheet).permit(:exit_station, :appearance)
-   end
+      params.require(:sheet).permit(:exit_station, :appearance, :seat_number)
+    end
  end

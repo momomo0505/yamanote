@@ -34,6 +34,11 @@ a {
   color: #3b4043;
 }
 
+/* ユーザー新規登録 */
+.new_user{
+  font-style: initial;
+}
+
 /* ヘッダー */
 
 .header {
@@ -91,12 +96,55 @@ a {
   left: 50%;
   transform: translateX(-50%);
   width: 70%;
-  height: 600px; /* 高さはお好みで調整してください */
+  height: 600px; 
   border: 5px solid black; /* 電車の外枠 */
   position: relative;
   margin: 20px 0;
   background-color: #ffffff; /* 車両の背景色 */
 }
+
+.info{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10vh;
+ text-align: center;
+ }
+
+.info1 {
+
+  border : solid 2px #333 ;
+  width: 70px; /* シートの幅 */
+  height: 30px; /* シートの高さ */
+  /*background-color: #4940ff; /* シートの色 */
+  top: 50%;
+text-align: center;
+
+}
+
+.info2 {
+   color: #f6f6f6;
+   border : solid 2px #333 ;
+   background-color: blue;
+   width: 70px; /* シートの幅 */
+   height: 30px; /* シートの高さ */
+   /*background-color: #4940ff; /* シートの色 */
+   top: 50%;
+ text-align: center;
+ margin-left: 20px;
+ }
+ 
+
+ .info3 {
+
+   border : solid 2px #333 ;
+   background-color: red;
+   width: 70px; /* シートの幅 */
+   height: 30px; /* シートの高さ */
+   /*background-color: #4940ff; /* シートの色 */
+   top: 50%;
+ text-align: center;
+ margin-left: 20px;
+ }
 
 /* ドアの共通スタイル */
 .train .door {
@@ -110,6 +158,11 @@ a {
 }
 
 /* シート */
+
+.train .reserved {
+  background-color: blue;
+}
+
 .train .sheet1 {
   content: "";
   border : solid 2px #333 ;
@@ -176,49 +229,6 @@ a {
   transform: translateY(-50%);
 }
 
-.train .sheet7 {
-  content: "";
-  border : solid 2px #333 ;
-  width: 50px; /* シートの幅 */
-  height: 60px; /* シートの高さ */
-  /*background-color: #4940ff; /* シートの色 */
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.train .sheet8 {
-  content: "";
-  border : solid 2px #333 ;
-  width: 50px; /* シートの幅 */
-  height: 60px; /* シートの高さ */
-  /*background-color: #4940ff; /* シートの色 */
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.train .sheet9 {
-  content: "";
-  border : solid 2px #333 ;
-  width: 50px; /* シートの幅 */
-  height: 60px; /* シートの高さ */
-  /*background-color: #4940ff; /* シートの色 */
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.train .sheet10 {
-  content: "";
-  border : solid 2px #333 ;
-  width: 50px; /* シートの幅 */
-  height: 60px; /* シートの高さ */
-  /*background-color: #4940ff; /* シートの色 */
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
 /* 電車の見出し（1両目など） */
 .train h1 {

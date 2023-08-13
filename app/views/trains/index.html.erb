@@ -1,7 +1,19 @@
 <main class="main">
   <div class="inner">
+<div class="info">
+    <div class="info1">
+    空席
+    </div>
+        <div class="info2">
+    購入可
+    </div>
+        <div class="info3">
+    売切れ
+    </div>
+        </div>
 
     <div class="card__wrapper">
+
       <%# 投稿機能実装後、部分テンプレートでプロトタイプ投稿一覧を表示する %>
 
 <div class="train">
@@ -17,13 +29,14 @@
   <div class="door" style="right: 0%; top: 85%;"></div>
   
 
-        <% (1..10).each do |seat_number| %>
-          <div class="sheet<%= seat_number %>" style="left: <%= left_value_for(seat_number) %>%; top: <%= top_value_for(seat_number) %>%;">
-            <%= link_to new_train_sheet_path(@train, seat_number: seat_number), class: "sheet#{seat_number}" do %>
-              <!-- 席の内容 -->
-            <% end %>
-          </div>       
-        <% end %>
+  <% (1..6).each do |seat_number| %>
+    <% seat_class = @sheets.include?(seat_number) ? "reserved" : "" %>
+    <div class="sheet<%= seat_number %> <%= seat_class %>" style="left: <%= left_value_for(seat_number) %>%; top: <%= top_value_for(seat_number) %>%;">
+      <%= link_to new_train_sheet_path(@train, seat_number: seat_number), class: "sheet#{seat_number}" do %>
+      <!-- 席の内容 -->
+    <% end %>
+  </div>       
+<% end %>
        </div>
      </div>
     </div>
