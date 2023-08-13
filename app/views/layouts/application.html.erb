@@ -29,8 +29,8 @@
                 <%# ログインしているときはようこそ〜表示 %>
          <% if user_signed_in? %>
            <div class="greeting">
-           <%= "　ようこそ、"%>
-            <%= link_to "#さん", root_path, class: :greeting__link%>
+        <%= "ようこそ、"%>
+         <%= link_to "#{current_user.nickname}さん", root_path, class: :greeting__link %>
            </div> 
             <% end %>
              <%# // ログインしているときはようこそ〜表示 %>
