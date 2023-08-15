@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root to: "trains#index"
   resources :trains do
     resources :sheets
+     resources :orders
   end
   
 

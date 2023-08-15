@@ -1,5 +1,5 @@
 class SheetsController < ApplicationController
-   before_action :authenticate_user!, except: [:index, :new]
+   before_action :authenticate_user!, except: [:index]
  
    def show
       @sheet = Sheet.find_by(id: params[:id])
