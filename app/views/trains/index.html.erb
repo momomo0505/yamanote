@@ -6,7 +6,9 @@
       <div class="info3">出品中</div>
     </div>
     <div class="card__wrapper">
+
       <% @trains.each do |train| %>
+
         <div class="train">
           <div class="yajirushi">⬆️</div> 
           <h1><%= train.id %>号車</h1>
@@ -46,10 +48,22 @@
       <% end %>
     </div>
   <% end %>
+
+ <% end %>
+ 
+
+        </div>
+
+      <% end %>
+
+
+
+
 <% end %>
 
         </div>
       <% end %>
     </div>
+
   </div>
 </main>
