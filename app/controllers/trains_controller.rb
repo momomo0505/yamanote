@@ -11,4 +11,3 @@ class TrainsController < ApplicationController
   end
 
 
-end
