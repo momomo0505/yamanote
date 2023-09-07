@@ -1,7 +1,8 @@
 {
-  "name": "yamanote",
+  "name": "c",
   "private": true,
   "dependencies": {
+    "@paypayopa/paypayopa-sdk-node": "^2.1.0",
     "@rails/actioncable": "^6.0.0-alpha",
     "@rails/activestorage": "^6.0.0-alpha",
     "@rails/ujs": "^6.0.0-alpha",
@@ -11,5 +12,24 @@
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^4.15.1"
-  }
+  },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "babel.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/momomo0505/yamanote.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/momomo0505/yamanote/issues"
+  },
+  "homepage": "https://github.com/momomo0505/yamanote#readme"
 }
