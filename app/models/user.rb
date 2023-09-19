@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   validates :nickname, presence: true
+  validates :paypay_account, presence: true
   has_many :sheets
 
 end

@@ -1,8 +1,12 @@
 <div class="sheets_show">
+<%= image_tag "pay.png", alt: "Pay Image" %>
+
   <div class="sheet_font1">このシートを出品しました</div>
-  <div class="sheet_font2">購入者が来られたらカメラでQRコードを読み取り代金を受け取ってください</div>
-  <div class="sheet_font2">決済完了後に座席を購入者に空け渡してください</div>
-  <div class="sheet_font2">もしも来られなかった場合は下記ボタンからこの座席の出品を取り消してください</div>
+  
+  <div class="sheet_font2">購入者が来たらQRコードを読み取ってもらいましょう</div>
+  <div class="sheet_font2">決済完了かつ目的の駅に着いたら座席を購入者と交代してください</div>
+  <br>
+  <div class="sheet_font2">※キャンセルする場合や購入者が現れなかった場合は下記ボタンからこの座席の出品を取り消してください</div>
   <div class="nav__del"> 
 <%= link_to "この座席の出品取消", train_sheet_path(@sheet.train_id, @sheet), method: :delete, class: :nav__btn %>
 </div>

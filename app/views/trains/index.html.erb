@@ -32,11 +32,11 @@
                   <%= link_to "出品中", train_sheet_path(train, sheet), class: "sheet#{seat_number} info33" %>
                 </div>
               <% elsif sheet.seller_id != current_user.id %>
-                <!-- 席が出品されており、現在のユーザーが出品者ではない場合 -->
-                <div class="sheet<%= seat_number %> reserved" style="left: <%= left_value_for(seat_number) %>%; top: <%= top_value_for(seat_number) %>%;">
-                  <%= link_to "購入可", new_train_order_path(train_id: train.id, sheet_id: sheet.id),class: "sheet#{seat_number} info22" %>
-                </div>
-              <% end %>
+              <!-- 席が出品されており、現在のユーザーが出品者ではない場合 -->
+               <div class="sheet<%= seat_number %> reserved" style="left: <%= left_value_for(seat_number) %>%; top: <%= top_value_for(seat_number) %>%;">
+                 <%= link_to sheet.exit_station || "購入可", new_train_order_path(train_id: train.id, sheet_id: sheet.id), class: "sheet#{seat_number} info22" %>
+               </div>
+             <% end %>
             <% else %>
               <!-- 席が出品されていない場合またはログインしていない場合 -->
               <div class="sheet<%= seat_number %>" style="left: <%= left_value_for(seat_number) %>%; top: <%= top_value_for(seat_number) %>%;">
