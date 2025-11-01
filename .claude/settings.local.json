@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ruby -v:*)",
+      "Bash(bundle:*)",
+      "Bash(rbenv versions:*)",
+      "Bash(rails -v:*)",
+      "Bash(bin/spring:*)",
+      "Bash(yarn install:*)",
+      "Bash(lsof:*)",
+      "Bash(kill:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

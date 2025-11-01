@@ -1,3 +1,13 @@
 <div class="order_new">
-<h1>購入時paypay決済画面</h1>
+  <div class="sheet_font1">このシートを100円で購入します</div>
+  <div class="sheet_font2">出品者の特徴は <b><%= @sheet&.appearance || "未設定" %></b> です</div>
+  <div class="sheet_font2">カメラでpaypayバーコードを読みとって支払いをおこなってください</div>
+  <div class="sheet_font2">決済完了したのち目的の駅に着いたら座席を交代してください</div>
+
+<div class="camera">
+  <div id="cam">
+    <label for="upload">カメラを起動する</label>
+    <input id="upload" class="camera-input" type="file" name="image" accept="image/*" capture>
+</div>
+</div>
 </div>
